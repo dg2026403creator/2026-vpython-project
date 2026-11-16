@@ -58,45 +58,45 @@ cylinder(pos=vector(-8,0.2,3.8),
          radius=0.08,
          color=color.black)
 
-sphere(pos=vector(-8,3.2,3.8),
-       radius=0.2,
-       color=color.yellow)
+lamp1 = sphere(pos=vector(-8,3.2,3.8),
+               radius=0.2,
+               color=vector(0.3,0.3,0))
 
 cylinder(pos=vector(-4,0.2,3.8),
          axis=vector(0,3,0),
          radius=0.08,
          color=color.black)
 
-sphere(pos=vector(-4,3.2,3.8),
-       radius=0.2,
-       color=color.yellow)
+lamp2 = sphere(pos=vector(-4,3.2,3.8),
+               radius=0.2,
+               color=vector(0.3,0.3,0))
 
 cylinder(pos=vector(0,0.2,3.8),
          axis=vector(0,3,0),
          radius=0.08,
          color=color.black)
 
-sphere(pos=vector(0,3.2,3.8),
-       radius=0.2,
-       color=color.yellow)
+lamp3 = sphere(pos=vector(0,3.2,3.8),
+               radius=0.2,
+               color=vector(0.3,0.3,0))
 
 cylinder(pos=vector(4,0.2,3.8),
          axis=vector(0,3,0),
          radius=0.08,
          color=color.black)
 
-sphere(pos=vector(4,3.2,3.8),
-       radius=0.2,
-       color=color.yellow)
+lamp4 = sphere(pos=vector(4,3.2,3.8),
+               radius=0.2,
+               color=vector(0.3,0.3,0))
 
 cylinder(pos=vector(8,0.2,3.8),
          axis=vector(0,3,0),
          radius=0.08,
          color=color.black)
 
-sphere(pos=vector(8,3.2,3.8),
-       radius=0.2,
-       color=color.yellow)
+lamp5 = sphere(pos=vector(8,3.2,3.8),
+               radius=0.2,
+               color=vector(0.3,0.3,0))
 
 head = sphere(pos=vector(0,5,0),
               radius=0.7,
@@ -235,6 +235,13 @@ while True:
     rate(60)
 
     keys = keysdown()
+
+    if ' ' in keys:
+        lamp1.color = color.yellow
+        lamp2.color = color.yellow
+        lamp3.color = color.yellow
+        lamp4.color = color.yellow
+        lamp5.color = color.yellow
 
     if 'w' in keys:
         for part in body:
