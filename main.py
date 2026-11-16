@@ -9,6 +9,95 @@ road = box(pos=vector(0,0,0),
            size=vector(20,0.2,6),
            color=vector(0.5,0.5,0.5))
 
+box(pos=vector(-9,0.12,0),
+    size=vector(1.5,0.03,0.15),
+    color=color.yellow)
+
+box(pos=vector(-6,0.12,0),
+    size=vector(1.5,0.03,0.15),
+    color=color.yellow)
+
+box(pos=vector(-3,0.12,0),
+    size=vector(1.5,0.03,0.15),
+    color=color.yellow)
+
+box(pos=vector(0,0.12,0),
+    size=vector(1.5,0.03,0.15),
+    color=color.yellow)
+
+box(pos=vector(3,0.12,0),
+    size=vector(1.5,0.03,0.15),
+    color=color.yellow)
+
+box(pos=vector(6,0.12,0),
+    size=vector(1.5,0.03,0.15),
+    color=color.yellow)
+
+box(pos=vector(9,0.12,0),
+    size=vector(1.5,0.03,0.15),
+    color=color.yellow)
+
+box(pos=vector(0,0.12,2.7),
+    size=vector(20,0.03,0.12),
+    color=color.white)
+
+box(pos=vector(0,0.12,-2.7),
+    size=vector(20,0.03,0.12),
+    color=color.white)
+
+box(pos=vector(0,-0.05,3.5),
+    size=vector(20,0.3,1),
+    color=vector(0.7,0.7,0.7))
+
+box(pos=vector(0,-0.05,-3.5),
+    size=vector(20,0.3,1),
+    color=vector(0.7,0.7,0.7))
+
+cylinder(pos=vector(-8,0.2,3.8),
+         axis=vector(0,3,0),
+         radius=0.08,
+         color=color.black)
+
+sphere(pos=vector(-8,3.2,3.8),
+       radius=0.2,
+       color=color.yellow)
+
+cylinder(pos=vector(-4,0.2,3.8),
+         axis=vector(0,3,0),
+         radius=0.08,
+         color=color.black)
+
+sphere(pos=vector(-4,3.2,3.8),
+       radius=0.2,
+       color=color.yellow)
+
+cylinder(pos=vector(0,0.2,3.8),
+         axis=vector(0,3,0),
+         radius=0.08,
+         color=color.black)
+
+sphere(pos=vector(0,3.2,3.8),
+       radius=0.2,
+       color=color.yellow)
+
+cylinder(pos=vector(4,0.2,3.8),
+         axis=vector(0,3,0),
+         radius=0.08,
+         color=color.black)
+
+sphere(pos=vector(4,3.2,3.8),
+       radius=0.2,
+       color=color.yellow)
+
+cylinder(pos=vector(8,0.2,3.8),
+         axis=vector(0,3,0),
+         radius=0.08,
+         color=color.black)
+
+sphere(pos=vector(8,3.2,3.8),
+       radius=0.2,
+       color=color.yellow)
+
 head = sphere(pos=vector(0,5,0),
               radius=0.7,
               texture="https://i.postimg.cc/mDgmMsvj/kaebcheo.png")
@@ -93,36 +182,36 @@ criminal_belly = ellipsoid(pos=vector(5,2.9,0),
                            color=color.red)
 
 criminal_left_arm = cylinder(pos=vector(4.2,4,0),
-                              axis=vector(-0.5,-1,0),
+                             axis=vector(-0.5,-1,0),
+                             radius=0.3,
+                             color=color.red)
+
+criminal_right_arm = cylinder(pos=vector(5.8,4,0),
+                              axis=vector(0.5,-1,0),
                               radius=0.3,
                               color=color.red)
 
-criminal_right_arm = cylinder(pos=vector(5.8,4,0),
-                               axis=vector(0.5,-1,0),
-                               radius=0.3,
-                               color=color.red)
-
 criminal_left_hand = sphere(pos=vector(3.7,3,0),
-                             radius=0.3,
-                             color=color.orange)
+                            radius=0.3,
+                            color=color.orange)
 
 criminal_right_hand = sphere(pos=vector(6.3,3,0),
-                              radius=0.3,
-                              color=color.orange)
+                             radius=0.3,
+                             color=color.orange)
 
 criminal_pants = box(pos=vector(5,2,0),
                      size=vector(1.2,0.8,0.6),
                      color=color.black)
 
 criminal_left_leg = cylinder(pos=vector(4.7,1.6,0),
+                             axis=vector(0,-1.2,0),
+                             radius=0.25,
+                             color=color.black)
+
+criminal_right_leg = cylinder(pos=vector(5.3,1.6,0),
                               axis=vector(0,-1.2,0),
                               radius=0.25,
                               color=color.black)
-
-criminal_right_leg = cylinder(pos=vector(5.3,1.6,0),
-                               axis=vector(0,-1.2,0),
-                               radius=0.25,
-                               color=color.black)
 
 criminal_left_foot = sphere(pos=vector(4.7,0.25,0),
                             radius=0.3,
