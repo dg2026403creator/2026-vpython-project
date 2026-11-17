@@ -70,11 +70,11 @@ cylinder(pos=vector(-4,0.2,3.8),
 lamp2 = sphere(pos=vector(-4,3.2,3.8),
                radius=0.2,
                color=vector(0.3,0.3,0))
-
 cylinder(pos=vector(0,0.2,3.8),
          axis=vector(0,3,0),
          radius=0.08,
          color=color.black)
+
 
 lamp3 = sphere(pos=vector(0,3.2,3.8),
                radius=0.2,
@@ -227,6 +227,8 @@ criminal = [criminal_head, criminal_body, criminal_belly,
             criminal_pants, criminal_left_leg,
             criminal_right_leg, criminal_left_foot,
             criminal_right_foot]
+local_light(pos=vec(- 3, 1, - 2), color=color.yellow)            
+        
 
 speed = 0.1
 caught = False
